@@ -8,7 +8,7 @@ packages:
   gitUsername: andresousabarbosa
   gitBranch: main
 services:
-- serviceName: project.pkgdemoanba.integrations:getListNFeCliente
+- serviceName: project.pkgdemoanba.integrations:getListNFeClient
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
