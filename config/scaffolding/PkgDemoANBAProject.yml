@@ -8,11 +8,11 @@ packages:
   gitUsername: andresousabarbosa
   gitBranch: main
 services:
-- serviceName: project.pkgdemoanba.integrations:handleRequest
+- serviceName: project.pkgdemoanba.integrations:getListNFeCliente
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
-- serviceName: project.pkgdemoanba.integrations:serviceHello3
+- serviceName: project.pkgdemoanba.integrations:handleRequest
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
