@@ -1,10 +1,3 @@
 version: "1.0"
 projectName: PkgDemoANBAProject
-runtimes:
-- runtimeAlias: Cloud Designtime
-  assets:
-  - name: testeApiRest
-    type: REST
-    path: /getTest
-    action: POST
-    reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:handleRequest
+runtimes: []
