@@ -16,7 +16,3 @@ services:
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
-- serviceName: project.pkgdemoanba.integrations:serviceHello5
-  packages:
-  - name: PkgDemoANBAProject
-    version: "1.0"
