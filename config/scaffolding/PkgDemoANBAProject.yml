@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: PkgDemoANBAProject
+  gitServerName: github_anbarbosa
+  gitUrl: https://github.com/andresousabarbosa
+  gitUsername: andresousabarbosa
+  gitBranch: main
