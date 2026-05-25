@@ -59,14 +59,40 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">ANDRE.BARBOSA@ibm.com</value>
-    <value name="lastModifiedDate">1779452253926</value>
+    <value name="lastModifiedDate">1779722310540</value>
     <value name="displayName">getListNFeClient</value>
     <value name="description"></value>
+    <array name="appList" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <null name="providerName"/>
+        <null name="id"/>
+      </record>
+    </array>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
       <record name="/0" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
         <value name="nodePathForDebug">0</value>
+        <Boolean name="allowCustomOperations">true</Boolean>
+        <value name="nodePathNew">0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">1</number>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <value name="itemType">APPS</value>
+        <Boolean name="allowCustomOperations">true</Boolean>
+        <number name="ui_step_index" type="Long">2</number>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
+      </record>
+      <null name="/2"/>
+      <null name="/3"/>
+      <record name="/4" javaclass="com.wm.util.Values">
+        <value name="itemType">ALL</value>
+        <value name="name">NEW</value>
       </record>
     </record>
   </record>
