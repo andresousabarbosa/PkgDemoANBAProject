@@ -7,12 +7,36 @@ packages:
   gitUrl: https://github.com/andresousabarbosa
   gitUsername: andresousabarbosa
   gitBranch: main
+security:
+- name: PkgDemoANBAProject
+  allowedServices: []
+  javaServiceSetting: ALL
 services:
 - serviceName: project.pkgdemoanba.integrations:getListNFeClient
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
+- serviceName: pub.json:jsonStringToDocument
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.828
+- serviceName: project.pkgdemoanba.integrations:getPDFfromNFe
+  packages:
+  - name: PkgDemoANBAProject
+    version: "1.0"
+- serviceName: project.pkgdemoanba.integrations:getQRCodefromNFe
+  packages:
+  - name: PkgDemoANBAProject
+    version: "1.0"
 - serviceName: project.pkgdemoanba.integrations:handleRequest
+  packages:
+  - name: PkgDemoANBAProject
+    version: "1.0"
+- serviceName: project.pkgdemoanba.integrations:send2ViaByEmail
+  packages:
+  - name: PkgDemoANBAProject
+    version: "1.0"
+- serviceName: project.pkgdemoanba.integrations:serviceParseInfo
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
