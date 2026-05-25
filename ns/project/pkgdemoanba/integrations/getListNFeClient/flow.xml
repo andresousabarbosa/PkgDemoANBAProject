@@ -606,15 +606,8 @@
 <MAP TIMEOUT="" MODE="STANDALONE">
   <COMMENT></COMMENT>
 </MAP>
-<<<<<<< Upstream, based on origin/main
-
-<MAP TIMEOUT="" MODE="STANDALONE">
-  <COMMENT>TESTE</COMMENT>
-</MAP>
 
 <SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
   <COMMENT></COMMENT>
 </SEQUENCE>
-=======
->>>>>>> dd8b2c8 Ajuste do flow
 </FLOW>
