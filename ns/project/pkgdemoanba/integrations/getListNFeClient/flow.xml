@@ -482,6 +482,10 @@
 </MAP>
 </INVOKE>
 
+<INVOKE TIMEOUT="" SERVICE="project.pkgdemoanba.custom:serviceParseInfo" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+</INVOKE>
+
 <MAP TIMEOUT="" MODE="STANDALONE">
   <COMMENT></COMMENT>
 </MAP>

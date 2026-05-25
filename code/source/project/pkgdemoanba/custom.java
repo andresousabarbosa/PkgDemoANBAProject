@@ -9,16 +9,16 @@ import com.wm.app.b2b.server.ServiceException;
 // --- <<IS-START-IMPORTS>> ---
 // --- <<IS-END-IMPORTS>> ---
 
-public final class integrations
+public final class custom
 
 {
 	// ---( internal utility methods )---
 
-	final static integrations _instance = new integrations();
+	final static custom _instance = new custom();
 
-	static integrations _newInstance() { return new integrations(); }
+	static custom _newInstance() { return new custom(); }
 
-	static integrations _cast(Object o) { return (integrations)o; }
+	static custom _cast(Object o) { return (custom)o; }
 
 	// ---( server methods )---
 
