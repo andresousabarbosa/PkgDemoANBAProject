@@ -15,15 +15,13 @@
       <value name="since"></value>
       <value name="deprecated"></value>
       <value name="is_visible"></value>
-      <value name="field_type">record</value>
+      <value name="field_type">recref</value>
       <value name="field_dim">0</value>
-      <value name="wrapper_type">IData</value>
       <value name="nillable">true</value>
       <value name="form_qualified">false</value>
       <value name="is_global">false</value>
-      <array name="rec_fields" type="record" depth="1">
-      </array>
       <value name="modifiable">true</value>
+      <value name="rec_ref">project.pkgdemoanba.documenttypes:requestGetQRCode</value>
     </record>
     <record name="sig_out" javaclass="com.wm.util.Values">
       <value name="node_type">record</value>
@@ -35,15 +33,13 @@
       <value name="since"></value>
       <value name="deprecated"></value>
       <value name="is_visible"></value>
-      <value name="field_type">record</value>
+      <value name="field_type">recref</value>
       <value name="field_dim">0</value>
-      <value name="wrapper_type">IData</value>
       <value name="nillable">true</value>
       <value name="form_qualified">false</value>
       <value name="is_global">false</value>
-      <array name="rec_fields" type="record" depth="1">
-      </array>
       <value name="modifiable">true</value>
+      <value name="rec_ref">project.pkgdemoanba.documenttypes:responseGetQRCode</value>
     </record>
   </record>
   <value name="description"></value>
