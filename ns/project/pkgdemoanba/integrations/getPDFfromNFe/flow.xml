@@ -5,11 +5,469 @@
 
   <!-- nodes -->
 
-<MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">
+<INVOKE TIMEOUT="" SERVICE="pub.json:jsonStringToDocument" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">jsonStringToDocumentInput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">jsonString</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">jsonDocumentTypeName</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">strict</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>false</value>
+          <value>true</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">decodeRealAsDouble</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>true</value>
+          <value>false</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">decodeIntegerAsLong</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>true</value>
+          <value>false</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">decodeRealAsString</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>false</value>
+          <value>true</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">decodeNullRootAsEmpty</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>false</value>
+          <value>true</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">unescapeSpecialChars</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>true</value>
+          <value>false</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/jsonString;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">{
+
+"pdf": "JVBERi0xLjYKJdP0zOEKMSAwIG9iago8PAovUHJvZHVjZXIoVGVsZXJpayBSZXBvcnRpbmcgOS4wLjE1LjMyNCBcKGh0dHA6Ly93d3cudGVsZXJpay5jb20vcHJvZHVjdHMvcmVwb3J0aW5nLmFzcHhcKSkKL0NyZWF0aW9uRGF0ZShEOjIwMjYwNTIwMTU0ODQ4LTAzJzAwJykKL1N1YmplY3QoREFORkUzNTI2MDU0MzQ3MDU2NjAwNTc0NDU1MDAxMDAwMDE3NTc5MTU4MzExMjQ5OSkKL1RpdGxlKERBTkZFKQovQ3JlYXRvcihUZWxlcmlrIFJlcG9ydGluZyA5LjAuMTUuMzI0IFwoaHR0cDovL3d3dy50ZWxlcmlrLmNvbS9wcm9kdWN0cy9yZXBvcnRpbmcuYXNweFwpKQovQXV0aG9yKER5bmFtaWNjYSAtIEdlc3TjbyBORmUpCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9QYWdlcyA0IDAgUgovVmlld2VyUHJlZmVyZW5jZXMgMyAwIFIKL1R5cGUvQ2F0YWxvZwo+PgplbmRvYmoKMyAwIG9iago8PAovUHJpbnRTY2FsaW5nL05vbmUKL1R5cGUvVmlld2VyUHJlZmVyZW5jZXMKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL0tpZHNbNSAwIFJdCi9Db3VudCAxCi9UeXBlL1BhZ2VzCj4+CmVuZG9iago1IDAgb2JqCjw8Ci9Db250ZW50cyA2IDAgUgovUmVzb3VyY2VzIDcgMCBSCi9NZWRpYUJveFswIDAgNTk1LjI3NiA4NDEuODldCi9Hcm91cAo8PAovQ1MvRGV2aWNlUkdCCi9UeXBlL0dyb3VwCi9TL1RyYW5zcGFyZW5jeQo+PgovVHlwZS9QYWdlCi9QYXJlbnQgNCAwIFIKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL0ZpbHRlci9GbGF0ZURlY29kZQovTGVuZ3RoIDg3NTUKPj4Kc3RyZWFtClgJ1V1tqyW5cf5+fsX9bJi2XlrqFoTA3Ds7hkA+OF7IhxDCst61HXYce3chkF+fKklVqiqp5/bMjh3CMNzTdY6efqpKL6WSWv3Xh39y8O8N/jl3v53l6dsPcOnc09f/8/hr/9o/+bKde0jhye+bP2II+Dv4Hr5LaSsuP314pJy3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NjAwXSA0OFs2MDBdIDM4WzYwMF0gNDRbNjAwXSA0N1s2MDBdIDU0WzYwMF0gMjBbNjAwXSAyMls2MDBdIDI0WzYwMF0gMjFbNjAwXSAyNVs2MDBdIDI2WzYwMF0gMjdbNjAwXSAyOFs2MDBdIDIzWzYwMF0gMTZbNjAwXSAxOVs2MDBdIDE4WzYwMF0gMjlbNjAwXSAzN1s2MDBdIDE3WzYwMF0gNDVbNjAwXSA0MVs2MDBdIDE1WzYwMF0gMjAzWzYwMF0gNDNbNjAwXSAyMDBbNjAwXSA0Mls2MDBdIDIwN1s2MDBdIDExWzYwMF0gMTJbNjAwXSA1Mls2MDBdIDEwMVs2MDBdIDU5WzYwMF0gN1s2MDBdIDgyWzYwMF0gODFbNjAwXSA4Nls2MDBdIDg4WzYwMF0gNzlbNjAwXSA4N1s2MDBdIDY4WzYwMF0gNzFbNjAwXSA3Mls2MDBdIDc2WzYwMF0gNzBbNjAwXSA4M1s2MDBdIDg1WzYwMF0gOTBbNjAwXSA3M1s2MDBdIDkzWzYwMF0gNzRbNjAwXSA4OVs2MDBdIDY5WzYwMF0gODBbNjAwXSA5MVs2MDBdIDEyM1s2MDBdIDExNls2MDBdIDQ2WzYwMF0gMTc0WzYwMF1dCi9Gb250RGVzY3JpcHRvciAxMCAwIFIKL0NJRFRvR0lETWFwL0lkZW50aXR5Ci9DSURTeXN0ZW1JbmZvCjw8Ci9TdXBwbGVtZW50IDAKL09yZGVyaW5nKElkZW50aXR5KQovUmVnaXN0cnkoQWRvYmUpCj4+Ci9UeXBlL0ZvbnQKL0Jhc2VGb250L0NvdXJpZXJOZXcKPj4KZW5kb2JqCjEyIDAgb2JqCjw8Ci9EZXNjZW5kYW50Rm9udHNbMTEgMCBSXQovU3VidHlwZS9UeXBlMAovVHlwZS9Gb250Ci9Ub1VuaWNvZGUgOSAwIFIKL0VuY29kaW5nL0lkZW50aXR5LUgKL0Jhc2VGb250L0NvdXJpZXJOZXcKPj4KZW5kb2JqCjEzIDAgb2JqCjw8Ci9GaWx0ZXIvRmxhdGVEZWNvZGUKL0xlbmd0aCA1NjEKPj4Kc3RyZWFtClgJXZTNjuIwDMfvSPMOOc4cRm0SJxQJWYLCShz2Q8vuA0AbUKWlrUrnwNtvsV3Pag/8pLj++McOzsrD7tA2o8l+DF11TKO5NG09pHv3MVTJnNO1aRfWmbqpRjkRq9upX2RT8PFxH9Pt0F46s16b7Of08T4OD/O6qbtzesu+D3UamvZqXn+Xx7fs+NH3f9IttaPJEU2dLlOWr6f+2+mWTEYx74d6+tyMj/cp4ulhyOPXo0/GUYRlJVVXp3t/qtJwaq/pZbHO89zjxLLAl0Vq6/8dQsGB58tnhFuiEgDZVqASAtt8RGXwYqMoZphjS1TCSvwsKmEvfoBKsGwrC/yk2HxAZXBic6iEL2yzdGI6sfkclbCTuitUQhQ/qsgMcl9HN2WC3HfKq4QS/+k40+WSj07MMNuoIjNI3Ui3Z5ZLuQepZTrRDDwJYhR9qz0qtxuJ3aHSzzZSwfSixdIkmE7mYUkF00vv7QaVftZHKphetFiaNtPLzGNAZSk2t0UlFGLboRJEs9ujErZio0xMkHeQ0ySYTubhSC0TRLOniswgdS1NlullvpayM73UsPS6mV7euKUpMr3M0lJ2ppcakTyYe+kpbFAZRR+UqIzSq0DTYUaZEQAq45xvicoo+jygMohfcKiM8v8IpIK5FC0hoHIpPYCAyii2QGqZy1lzjso4v92Iyih9LqhLzM2Kd5XupOfempar0a1YfQzDtBBpA9MmfO7Apk26pPuuN1PU8/cXo5RRVgplbmRzdHJlYW0KZW5kb2JqCjE0IDAgb2JqCjw8Ci9YSGVpZ2h0IDQ0MwovSXRhbGljQW5nbGUgMAovVHlwZS9Gb250RGVzY3JpcHRvcgovRm9udE5hbWUvQ291cmllck5ldyxCb2xkCi9Gb250QkJveFstMTkyIC03MTAgNzAyIDEyMjFdCi9EZXNjZW50IC0zMDAKL1N0ZW1WIDAKL0FzY2VudCA4MzMKL0ZsYWdzIDMyCi9DYXBIZWlnaHQgNTkyCj4+CmVuZG9iagoxNSAwIG9iago8PAovU3VidHlwZS9DSURGb250VHlwZTIKL1dbMzlbNjAwXSA0MFs2MDBdIDU0WzYwMF0gNTVbNjAwXSA0NFs2MDBdIDQ5WzYwMF0gMzZbNjAwXSAyMDBbNjAwXSA1M1s2MDBdIDUwWzYwMF0gMThbNjAwXSA0OFs2MDBdIDQxWzYwMF0gNTZbNjAwXSAzOFs2MDBdIDQ3WzYwMF0gM1s2MDBdIDUxWzYwMF0gNTdbNjAwXSAxMDBbNjAwXSAxNls2MDBdIDcyWzYwMF0gMTU4WzYwMF0gMjlbNjAwXSAxOVs2MDBdIDE3WzYwMF0gMjBbNjAwXSAyNls2MDBdIDI0WzYwMF0gMjhbNjAwXSAxMDFbNjAwXSA0M1s2MDBdIDQ1WzYwMF0gNDZbNjAwXSAzN1s2MDBdIDE1WzYwMF0gNDJbNjAwXSA1OVs2MDBdIDIyWzYwMF0gMjFbNjAwXSAyM1s2MDBdIDI1WzYwMF0gMjdbNjAwXSAxMDVbNjAwXSA3NFs2MDBdIDc2WzYwMF0gODFbNjAwXSA2OFs2MDBdIDcxWzYwMF0gNTJbNjAwXSA4Mls2MDBdIDkwWzYwMF0gODVbNjAwXSA2OVs2MDBdIDkyWzYwMF0gODBbNjAwXSA3MFs2MDBdIDEzOVs2MDBdXQovRm9udERlc2NyaXB0b3IgMTQgMCBSCi9DSURUb0dJRE1hcC9JZGVudGl0eQovQ0lEU3lzdGVtSW5mbwo8PAovU3VwcGxlbWVudCAwCi9PcmRlcmluZyhJZGVudGl0eSkKL1JlZ2lzdHJ5KEFkb2JlKQo+PgovVHlwZS9Gb250Ci9CYXNlRm9udC9Db3VyaWVyTmV3LEJvbGQKPj4KZW5kb2JqCjE2IDAgb2JqCjw8Ci9EZXNjZW5kYW50Rm9udHNbMTUgMCBSXQovU3VidHlwZS9UeXBlMAovVHlwZS9Gb250Ci9Ub1VuaWNvZGUgMTMgMCBSCi9FbmNvZGluZy9JZGVudGl0eS1ICi9CYXNlRm9udC9Db3VyaWVyTmV3LEJvbGQKPj4KZW5kb2JqCjE3IDAgb2JqCjw8Ci9UeXBlL0V4dEdTdGF0ZQovQ0EgMQo+PgplbmRvYmoKeHJlZgowIDE4CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDAxNSAwMDAwMCBuIAowMDAwMDAwMzYyIDAwMDAwIG4gCjAwMDAwMDA0MzUgMDAwMDAgbiAKMDAwMDAwMDQ5OSAwMDAwMCBuIAowMDAwMDAwNTU0IDAwMDAwIG4gCjAwMDAwMDA3MTggMDAwMDAgbiAKMDAwMDAwOTU0NSAwMDAwMCBuIAowMDAwMDA5NzE0IDAwMDAwIG4gCjAwMDAwMDk3NTcgMDAwMDAgbiAKMDAwMDAxMDQ3MyAwMDAwMCBuIAowMDAwMDEwNjU1IDAwMDAwIG4gCjAwMDAwMTE0NDMgMDAwMDAgbiAKMDAwMDAxMTU3NSAwMDAwMCBuIAowMDAwMDEyMjA4IDAwMDAwIG4gCjAwMDAwMTIzOTUgMDAwMDAgbiAKMDAwMDAxMzA2NiAwMDAwMCBuIAowMDAwMDEzMjA0IDAwMDAwIG4gCnRyYWlsZXIKPDwKL1Jvb3QgMiAwIFIKL1NpemUgMTgKL0luZm8gMSAwIFIKPj4Kc3RhcnR4cmVmCjEzMjQ4CiUlRU9GCg=="
+
+}</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">field</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">jsonString</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
 </MAP>
 
-<MAP TIMEOUT="" MODE="STANDALONE">
-  <COMMENT></COMMENT>
+<MAP MODE="OUTPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">jsonString</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+          <value name="field_usereditable">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">nfekey</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+          <value name="field_usereditable">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">action</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+          <value name="field_usereditable">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">griffe</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">document</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">response</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">document</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">numero _ nf</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">serie _ nf</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">valor _ nf</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">xmlKey</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">data_nf</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">nome _ cliente</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">pdf</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">jsonStringToDocumentOutput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">document</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/document;2;0" TO="/response;2;0">
+</MAPCOPY>
+
+<MAPDELETE FIELD="/action;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/griffe;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/document;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/numero _ nf;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/serie _ nf;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/valor _ nf;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/xmlKey;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/data_nf;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/nome _ cliente;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/jsonString;1;0">
+</MAPDELETE>
 </MAP>
+</INVOKE>
 </FLOW>

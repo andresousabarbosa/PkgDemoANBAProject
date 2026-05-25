@@ -37,11 +37,12 @@ public final class custom
 		String	string = IDataUtil.getString( pipelineCursor, "string" );
 		pipelineCursor.destroy();
 		
+		
 		string = string + " Parser Data";
 		
 		// pipeline
 		IDataCursor pipelineCursor_1 = pipeline.getCursor();
-		IDataUtil.put( pipelineCursor_1, "outputParser", "outputParser" );
+		IDataUtil.put( pipelineCursor_1, "outputParser", string );
 		pipelineCursor_1.destroy();
 		// --- <<IS-END>> ---
 
