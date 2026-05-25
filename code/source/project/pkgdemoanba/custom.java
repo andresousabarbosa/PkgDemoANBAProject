@@ -38,6 +38,7 @@ public final class custom
 		pipelineCursor.destroy();
 		
 		
+		
 		string = string + " Parser Data";
 		
 		// pipeline
