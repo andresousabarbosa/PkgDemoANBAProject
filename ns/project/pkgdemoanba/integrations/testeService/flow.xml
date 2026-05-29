@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<FLOW VERSION="3.2" CLEANUP="false">
+<FLOW VERSION="3.2" CLEANUP="true">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
 
 <MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">
   <COMMENT>Teste</COMMENT>
+</MAP>
+
+<MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">
 </MAP>
 </FLOW>
