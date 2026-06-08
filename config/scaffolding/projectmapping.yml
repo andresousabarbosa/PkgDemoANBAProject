@@ -13,3 +13,8 @@ runtimes:
     path: /teste
     action: GET
     reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:testeService
+  - name: NFEInfo
+    type: REST
+    path: /getNFE
+    action: POST
+    reference: fld_111498864_stage00.projects.fl94a5c649357a4808ba8481ecd1835f41.WmPackageServiceProvider.project.pkgdemoanba.integrations:handleRequest
