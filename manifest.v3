@@ -9,18 +9,20 @@
   <null name="startup_services"/>
   <null name="shutdown_services"/>
   <null name="replication_services"/>
-  <null name="requires"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="CustomizeDev">1.0</value>
+  </record>
   <null name="lazy_load_node_types"/>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">62</value>
+  <value name="build">63</value>
   <null name="description"/>
   <value name="created_date">22-05-2026 00:45:02 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-06-09T16:36:52.952677066Z</value>
+  <value name="lastUpdated">2026-06-15T14:56:17.467230636Z</value>
   <value name="wmProjectId">fl90df8caa77e84a00b55842fd7b7cc36c</value>
   <value name="creator">ANDRE BARBOSA</value>
 </Values>

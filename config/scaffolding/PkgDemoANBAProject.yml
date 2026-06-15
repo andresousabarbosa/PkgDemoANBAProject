@@ -7,6 +7,11 @@ packages:
   gitUrl: https://github.com/andresousabarbosa
   gitUsername: andresousabarbosa
   gitBranch: main
+- name: CustomizeDev
+  gitServerName: github_anbarbosa
+  gitUrl: https://github.com/andresousabarbosa
+  gitUsername: andresousabarbosa
+  gitBranch: main
 security:
 - name: PkgDemoANBAProject
   allowedServices: []
