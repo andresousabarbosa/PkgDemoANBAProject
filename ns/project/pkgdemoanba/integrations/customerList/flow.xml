@@ -5,7 +5,12 @@
 
   <!-- nodes -->
 
-<INVOKE NAME="CustomizeDev" SERVICE="customizeDev.model.customer.service:listCustomers">
+<INVOKE NAME="CustomizeDev" TIMEOUT="" SERVICE="customizeDev.model.customer.service:listCustomers" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="OUTPUT">
+</MAP>
 </INVOKE>
 </FLOW>
