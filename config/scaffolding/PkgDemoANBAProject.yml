@@ -2,13 +2,13 @@ version: "1.0"
 info:
   model: int-scaffold
 packages:
-- name: PkgDemoANBAProject
+- name: CustomizeDev
+  version: "1.0"
   gitServerName: github_anbarbosa
   gitUrl: https://github.com/andresousabarbosa
   gitUsername: andresousabarbosa
   gitBranch: main
-- name: CustomizeDev
-  version: "1.0"
+- name: PkgDemoANBAProject
   gitServerName: github_anbarbosa
   gitUrl: https://github.com/andresousabarbosa
   gitUsername: andresousabarbosa
