@@ -14,6 +14,44 @@ packages:
   gitUsername: andresousabarbosa
   gitBranch: main
 services:
+- serviceName: project.pkgdemoanba.integrations:customerDelete
+  packages:
+  - name: PkgDemoANBAProject
+    version: "1.0"
+  - name: CustomizeDev
+    version: "1.0"
+- serviceName: project.pkgdemoanba.integrations:customerGetById
+  packages:
+  - name: PkgDemoANBAProject
+    version: "1.0"
+  - name: CustomizeDev
+    version: "1.0"
+- serviceName: project.pkgdemoanba.integrations:customerInsert
+  packages:
+  - name: PkgDemoANBAProject
+    version: "1.0"
+  - name: CustomizeDev
+    version: "1.0"
+- serviceName: project.pkgdemoanba.integrations:customerList
+  packages:
+  - name: PkgDemoANBAProject
+    version: "1.0"
+  - name: CustomizeDev
+    version: "1.0"
+- serviceName: customizeDev.model.customer.service:listCustomers
+  packages:
+  - name: CustomizeDev
+    version: "1.0"
+- serviceName: customizeDev.model.customer.javaservice:customerMemoryStore
+  packages:
+  - name: CustomizeDev
+    version: "1.0"
+- serviceName: project.pkgdemoanba.integrations:customerUpdate
+  packages:
+  - name: PkgDemoANBAProject
+    version: "1.0"
+  - name: CustomizeDev
+    version: "1.0"
 - serviceName: project.pkgdemoanba.integrations:getListNFeClient
   packages:
   - name: PkgDemoANBAProject
@@ -43,12 +81,6 @@ services:
   - name: CustomizeDev
     version: "1.0"
 - serviceName: project.pkgdemoanba.integrations:send2ViaByEmail
-  packages:
-  - name: PkgDemoANBAProject
-    version: "1.0"
-  - name: CustomizeDev
-    version: "1.0"
-- serviceName: project.pkgdemoanba.integrations:testeService
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
