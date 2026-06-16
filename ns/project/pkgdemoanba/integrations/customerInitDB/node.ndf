@@ -45,15 +45,30 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">ANDRE.BARBOSA@ibm.com</value>
-    <value name="createdDate">1781646553705</value>
-    <value name="lastModifiedDate">1781646553705</value>
+    <value name="lastModifiedBy">ANDRE.BARBOSA@ibm.com</value>
+    <value name="lastModifiedDate">1781646577926</value>
     <value name="displayName">customerInitDB</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
       <record name="/0" javaclass="com.wm.util.Values">
-        <value name="itemType">ALL</value>
-        <value name="name">NEW</value>
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">CustomizeDev</value>
+          <value name="groupName">CustomizeDev;1.0</value>
+          <null name="services"/>
+        </record>
+        <Boolean name="isProjectPackage">false</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">customizeDev.model.customer.service:initialLoad</value>
+          <value name="serviceName">customizeDev.model.customer.service:initialLoad</value>
+          <value name="displayName">initialLoad</value>
+          <value name="assetType">Flow Service</value>
+          <value name="nsName">customizeDev.model.customer.service:initialLoad</value>
+          <value name="itemType">flowService</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
       </record>
     </record>
   </record>
