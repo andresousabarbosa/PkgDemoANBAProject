@@ -8,18 +8,17 @@ packages:
   gitUsername: andresousabarbosa
   gitBranch: main
 - name: CustomizeDev
+  version: "1.0"
   gitServerName: github_anbarbosa
   gitUrl: https://github.com/andresousabarbosa
   gitUsername: andresousabarbosa
   gitBranch: main
-security:
-- name: PkgDemoANBAProject
-  allowedServices: []
-  javaServiceSetting: ALL
 services:
 - serviceName: project.pkgdemoanba.integrations:getListNFeClient
   packages:
   - name: PkgDemoANBAProject
+    version: "1.0"
+  - name: CustomizeDev
     version: "1.0"
 - serviceName: pub.json:jsonStringToDocument
   packages:
@@ -29,19 +28,29 @@ services:
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
+  - name: CustomizeDev
+    version: "1.0"
 - serviceName: project.pkgdemoanba.integrations:getQRCodefromNFe
   packages:
   - name: PkgDemoANBAProject
+    version: "1.0"
+  - name: CustomizeDev
     version: "1.0"
 - serviceName: project.pkgdemoanba.integrations:handleRequest
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
+  - name: CustomizeDev
+    version: "1.0"
 - serviceName: project.pkgdemoanba.integrations:send2ViaByEmail
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
-- serviceName: project.pkgdemoanba.integrations:serviceParseInfo
+  - name: CustomizeDev
+    version: "1.0"
+- serviceName: project.pkgdemoanba.integrations:testeService
   packages:
   - name: PkgDemoANBAProject
+    version: "1.0"
+  - name: CustomizeDev
     version: "1.0"
