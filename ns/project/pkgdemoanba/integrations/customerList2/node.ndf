@@ -27,15 +27,15 @@
           <value name="node_subtype">unknown</value>
           <value name="node_comment"></value>
           <record name="node_hints" javaclass="com.wm.util.Values">
-            <value name="field_usereditable">true</value>
             <value name="field_largerEditor">false</value>
             <value name="field_password">false</value>
+            <value name="field_usereditable">true</value>
           </record>
           <value name="is_public">false</value>
           <value name="field_name">teste</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
-          <array name="field_options" type="value" depth="1">
+          <array name="field_options" type="record" depth="1">
           </array>
           <value name="nillable">true</value>
           <value name="form_qualified">false</value>
@@ -66,15 +66,15 @@
           <value name="node_subtype">unknown</value>
           <value name="node_comment"></value>
           <record name="node_hints" javaclass="com.wm.util.Values">
-            <value name="field_usereditable">true</value>
             <value name="field_largerEditor">false</value>
             <value name="field_password">false</value>
+            <value name="field_usereditable">true</value>
           </record>
           <value name="is_public">false</value>
           <value name="field_name">message</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
-          <array name="field_options" type="value" depth="1">
+          <array name="field_options" type="record" depth="1">
           </array>
           <value name="nillable">true</value>
           <value name="form_qualified">false</value>
@@ -98,16 +98,21 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">ANDRE.BARBOSA@ibm.com</value>
-    <value name="createdDate">1781653154188</value>
-    <value name="lastModifiedDate">1781653154188</value>
+    <value name="lastModifiedBy">ANDRE.BARBOSA@ibm.com</value>
+    <value name="lastModifiedDate">1781653327432</value>
     <value name="displayName">customerList2</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
       <record name="/0" javaclass="com.wm.util.Values">
         <value name="itemType">ALL</value>
         <value name="name">NEW</value>
+        <value name="nodePathForDebug">0</value>
+        <number name="ui_step_index" type="Long">1</number>
+        <value name="nodePathNew">0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">1</number>
       </record>
+      <null name="/0/0"/>
     </record>
   </record>
   <value name="svc_in_validator_options">none</value>
