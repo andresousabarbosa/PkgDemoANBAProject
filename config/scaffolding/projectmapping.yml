@@ -27,3 +27,13 @@ runtimes:
     path: /customers
     action: GET
     reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:customerList
+  - name: Customer
+    type: REST
+    path: /createCustomer
+    action: POST
+    reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:customerInsert
+  - name: Customer
+    type: REST
+    path: /customerById
+    action: GET
+    reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:customerGetById
