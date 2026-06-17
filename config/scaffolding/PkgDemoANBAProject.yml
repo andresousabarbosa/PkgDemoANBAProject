@@ -20,10 +20,40 @@ services:
     version: "1.0"
   - name: CustomizeDev
     version: "1.0"
+- serviceName: customizeDev.model.customer.service:deleteCustomer
+  packages:
+  - name: CustomizeDev
+    version: "1.0"
+- serviceName: customizeDev.model.customer.javaservice:customerMemoryStore
+  packages:
+  - name: CustomizeDev
+    version: "1.0"
 - serviceName: project.pkgdemoanba.integrations:customerGetById
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
+  - name: CustomizeDev
+    version: "1.0"
+- serviceName: customizeDev.model.customer.service:getCustomerById
+  packages:
+  - name: CustomizeDev
+    version: "1.0"
+- serviceName: project.pkgdemoanba.integrations:customerInitDB
+  packages:
+  - name: PkgDemoANBAProject
+    version: "1.0"
+  - name: CustomizeDev
+    version: "1.0"
+- serviceName: customizeDev.model.customer.service:initialLoad
+  packages:
+  - name: CustomizeDev
+    version: "1.0"
+- serviceName: pub.json:jsonStringToDocument
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.828
+- serviceName: customizeDev.model.customer.service:createCustomer
+  packages:
   - name: CustomizeDev
     version: "1.0"
 - serviceName: project.pkgdemoanba.integrations:customerInsert
@@ -32,7 +62,7 @@ services:
     version: "1.0"
   - name: CustomizeDev
     version: "1.0"
-- serviceName: project.pkgdemoanba.integrations:customerList
+- serviceName: project.pkgdemoanba.integrations:customerList2
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
@@ -42,8 +72,10 @@ services:
   packages:
   - name: CustomizeDev
     version: "1.0"
-- serviceName: customizeDev.model.customer.javaservice:customerMemoryStore
+- serviceName: project.pkgdemoanba.integrations:customerList3
   packages:
+  - name: PkgDemoANBAProject
+    version: "1.0"
   - name: CustomizeDev
     version: "1.0"
 - serviceName: project.pkgdemoanba.integrations:customerUpdate
@@ -52,16 +84,16 @@ services:
     version: "1.0"
   - name: CustomizeDev
     version: "1.0"
+- serviceName: customizeDev.model.customer.service:updateCustomer
+  packages:
+  - name: CustomizeDev
+    version: "1.0"
 - serviceName: project.pkgdemoanba.integrations:getListNFeClient
   packages:
   - name: PkgDemoANBAProject
     version: "1.0"
   - name: CustomizeDev
     version: "1.0"
-- serviceName: pub.json:jsonStringToDocument
-  packages:
-  - name: WmPublic
-    version: 12.1.0.0.828
 - serviceName: project.pkgdemoanba.integrations:getPDFfromNFe
   packages:
   - name: PkgDemoANBAProject
