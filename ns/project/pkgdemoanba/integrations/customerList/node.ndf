@@ -47,15 +47,15 @@
           <value name="node_subtype">unknown</value>
           <value name="node_comment"></value>
           <record name="node_hints" javaclass="com.wm.util.Values">
-            <value name="field_usereditable">true</value>
             <value name="field_largerEditor">false</value>
             <value name="field_password">false</value>
+            <value name="field_usereditable">true</value>
           </record>
           <value name="is_public">false</value>
           <value name="field_name">testeOut</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
-          <array name="field_options" type="value" depth="1">
+          <array name="field_options" type="record" depth="1">
           </array>
           <value name="nillable">true</value>
           <value name="form_qualified">false</value>
@@ -66,15 +66,15 @@
           <value name="node_subtype">unknown</value>
           <value name="node_comment"></value>
           <record name="node_hints" javaclass="com.wm.util.Values">
-            <value name="field_usereditable">true</value>
             <value name="field_largerEditor">false</value>
             <value name="field_password">false</value>
+            <value name="field_usereditable">true</value>
           </record>
           <value name="is_public">false</value>
           <value name="field_name">message</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
-          <array name="field_options" type="value" depth="1">
+          <array name="field_options" type="record" depth="1">
           </array>
           <value name="nillable">true</value>
           <value name="form_qualified">false</value>
@@ -119,15 +119,69 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">ANDRE.BARBOSA@ibm.com</value>
-    <value name="createdDate">1781882868584</value>
-    <value name="lastModifiedDate">1781882868584</value>
-    <value name="displayName">customerList7</value>
+    <value name="lastModifiedBy">ANDRE.BARBOSA@ibm.com</value>
+    <value name="lastModifiedDate">1781890875176</value>
+    <value name="displayName">customerList</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
       <record name="/0" javaclass="com.wm.util.Values">
         <value name="itemType">ALL</value>
         <value name="name">NEW</value>
+        <value name="nodePathForDebug">0</value>
+        <value name="nodePathNew">0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">1</number>
+      </record>
+      <null name="/0/0"/>
+      <null name="/0/1"/>
+      <null name="/0/2"/>
+      <null name="/1"/>
+      <null name="/1/0"/>
+      <null name="/1/1"/>
+      <record name="/2" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">CustomizeDev</value>
+          <value name="groupName">CustomizeDev;1.0</value>
+          <null name="services"/>
+        </record>
+        <Boolean name="isProjectPackage">false</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">customizeDev.model.customer.service:listCustomers</value>
+          <value name="serviceName">customizeDev.model.customer.service:listCustomers</value>
+          <value name="displayName">listCustomers</value>
+          <value name="assetType">Flow Service</value>
+          <value name="nsName">customizeDev.model.customer.service:listCustomers</value>
+          <value name="itemType">flowService</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <Boolean name="allowCustomOperations">true</Boolean>
+        <number name="ui_step_index" type="Long">3</number>
+        <value name="nodePathNew">2</value>
+        <number name="nodeIndex" type="Long">2</number>
+        <number name="lineNumberForDebug" type="Long">3</number>
+      </record>
+      <record name="/3" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">List</value>
+          <value name="groupName">list</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">sizeOfList</value>
+          <value name="serviceName">pub.list:sizeOfList</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <number name="ui_step_index" type="Long">3</number>
+        <value name="nodePathNew">2</value>
+        <number name="nodeIndex" type="Long">2</number>
+        <number name="lineNumberForDebug" type="Long">3</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
       </record>
     </record>
   </record>
