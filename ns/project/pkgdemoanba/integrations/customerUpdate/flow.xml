@@ -5,7 +5,7 @@
 
   <!-- nodes -->
 
-<INVOKE NAME="CustomizeDev" SERVICE="customizeDev.model.customer.service:updateCustomer">
+<INVOKE NAME="CustomizeDev" TIMEOUT="" SERVICE="customizeDev.model.customer.service:updateCustomer" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 </INVOKE>
 </FLOW>
