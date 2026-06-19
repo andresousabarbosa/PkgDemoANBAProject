@@ -52,7 +52,7 @@
             <value name="field_usereditable">true</value>
           </record>
           <value name="is_public">false</value>
-          <value name="field_name">testeOut</value>
+          <value name="field_name">success</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
           <array name="field_options" type="record" depth="1">
@@ -120,7 +120,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">ANDRE.BARBOSA@ibm.com</value>
-    <value name="lastModifiedDate">1781891140457</value>
+    <value name="lastModifiedDate">1781891184365</value>
     <value name="displayName">customerList</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
