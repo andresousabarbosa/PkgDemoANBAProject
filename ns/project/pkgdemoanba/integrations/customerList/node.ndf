@@ -120,25 +120,11 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">ANDRE.BARBOSA@ibm.com</value>
-    <value name="lastModifiedDate">1781890973915</value>
+    <value name="lastModifiedDate">1781891140457</value>
     <value name="displayName">customerList</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
       <record name="/0" javaclass="com.wm.util.Values">
-        <value name="itemType">ALL</value>
-        <value name="name">NEW</value>
-        <value name="nodePathForDebug">0</value>
-        <value name="nodePathNew">0</value>
-        <number name="nodeIndex" type="Long">0</number>
-        <number name="lineNumberForDebug" type="Long">1</number>
-      </record>
-      <null name="/0/0"/>
-      <null name="/0/1"/>
-      <null name="/0/2"/>
-      <null name="/1"/>
-      <null name="/1/0"/>
-      <null name="/1/1"/>
-      <record name="/2" javaclass="com.wm.util.Values">
         <null name="name"/>
         <value name="itemType">PACKAGES</value>
         <record name="serviceInfo" javaclass="com.wm.util.Values">
@@ -163,7 +149,7 @@
         <number name="nodeIndex" type="Long">2</number>
         <number name="lineNumberForDebug" type="Long">3</number>
       </record>
-      <record name="/3" javaclass="com.wm.util.Values">
+      <record name="/1" javaclass="com.wm.util.Values">
         <null name="name"/>
         <value name="itemType">SERVICES</value>
         <record name="serviceInfo" javaclass="com.wm.util.Values">
@@ -183,7 +169,7 @@
         <null name="mapSet"/>
         <null name="outputMapSet"/>
       </record>
-      <record name="/4" javaclass="com.wm.util.Values">
+      <record name="/2" javaclass="com.wm.util.Values">
         <value name="name">IF</value>
         <value name="itemType">CONTROLS</value>
         <record name="config" javaclass="com.wm.util.Values">
@@ -200,7 +186,7 @@
         <number name="nodeIndex" type="Long">4</number>
         <number name="lineNumberForDebug" type="Long">5</number>
       </record>
-      <record name="/4/0" javaclass="com.wm.util.Values">
+      <record name="/2/0" javaclass="com.wm.util.Values">
         <null name="name"/>
         <value name="itemType">PACKAGES</value>
         <record name="serviceInfo" javaclass="com.wm.util.Values">
