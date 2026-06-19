@@ -41,4 +41,4 @@ runtimes:
     type: REST
     path: /customerAll
     action: GET
-    reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:customerList7
+    reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:customerList
