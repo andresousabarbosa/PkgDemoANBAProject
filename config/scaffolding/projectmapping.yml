@@ -44,11 +44,21 @@ runtimes:
     reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:customerInsert2
   - name: Customer
     type: REST
-    path: /createCustomer
-    action: POST
-    reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:customerInsert2
-  - name: Customer
-    type: REST
     path: /updateCustomer
     action: PUT
     reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:customerUpdate
+  - name: Customer
+    type: REST
+    path: "/customerById/{id}"
+    action: GET
+    reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:customerGetById
+  - name: Customer
+    type: REST
+    path: "/deleteCustomer/{id}"
+    action: DELETE
+    reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:customerDelete
+  - name: Customer
+    type: REST
+    path: /createCustomer
+    action: POST
+    reference: fld_111566327_stage00.projects.fl90df8caa77e84a00b55842fd7b7cc36c.WmPackageServiceProvider.project.pkgdemoanba.integrations:customerInsert
